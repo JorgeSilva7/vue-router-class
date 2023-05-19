@@ -6,8 +6,9 @@ import Home from './pages/Home';
 const routes = [
   {
     name: 'pokemon_details',
-    path: '/pokemon-details',
+    path: '/pokemon-details/:id',
     component: PokemonDetails,
+    props: true,
   },
   {
     name: 'home',
