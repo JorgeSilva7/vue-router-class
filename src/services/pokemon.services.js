@@ -16,11 +16,9 @@ function listPokemons({ limit, offset }) {
 }
 
 function getDetails(id) {
-  return axios
-    .get(`${BASE_URL}/pokemon/${id}`)
-    .then((result) => {
-      return result.data;
-    });
+  return axios.get(`${BASE_URL}/pokemon/${id}`).then((result) => {
+    return result.data;
+  });
 }
 
 export { listPokemons, getDetails };
